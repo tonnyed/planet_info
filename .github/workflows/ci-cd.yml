@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: plannet-app CI/CD Pipeline
 
 on:
   push:
@@ -67,4 +67,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/solar-system:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/plannet-app:latest
