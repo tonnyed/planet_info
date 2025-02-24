@@ -38,6 +38,7 @@ class PlanetQuery():
             return planets
         except (FileNotFoundError, IOError):
             print(f"Error: The file {self.load_data} was not found.")
+            return None
 
     def load_planets_hardcode(self):
         planets = {}
@@ -46,9 +47,9 @@ class PlanetQuery():
             Planet("Venus", 0.815, 108.2, []),
             Planet("Earth", 1.0, 149.6, ["Moon"]),
             Planet("Mars", 0.107, 227.9, ["Phobos", "Deimos"]),
-            Planet("Jupiter", 317.8, 778.5, ["Io", "Europa", "Ganymede", "Callisto"]),
-            Planet("Saturn", 95.2, 1433.5, ["Titan", "Rhea", "Iapetus", "Dione"]),
-            Planet("Uranus", 14.5, 2872.5, ["Titania", "Oberon", "Umbriel", "Ariel"]),
+            Planet("Jupiter", 317.8, 778.5, ["Io", "Europa", "Ganymede", "Callisto"]),  # noqa: E501
+            Planet("Saturn", 95.2, 1433.5, ["Titan", "Rhea", "Iapetus", "Dione"]),  # noqa: E501
+            Planet("Uranus", 14.5, 2872.5, ["Titania", "Oberon", "Umbriel", "Ariel"]),  # noqa: E501
             Planet("Neptune", 17.1, 4495.1, ["Triton", "Proteus", "Nereid"]),
             Planet("Pluto", 0.0022, 5906.4, ["Charon"])]
 
@@ -66,7 +67,7 @@ class PlanetQuery():
         self.planet_name = planet_name
         planets = self.planets
         if self.planet_name in planets:
-            return f"The mass of {planets[planet_name].name} is {planets[planet_name].mass} kg."
+            return f"The mass of {planets[planet_name].name} is {planets[planet_name].mass} kg."  # noqa: E501
         else:
             return f"Planet '{planet_name}' not found!"
 
@@ -74,7 +75,7 @@ class PlanetQuery():
         planet_name = planet_name.lower()
         self.planet_name = planet_name
         planets = self.planets
-        return f"{planet_name.capitalize()} {'is' if planet_name in planets else 'is not'} in the list of planets."
+        return f"{planet_name.capitalize()} {'is' if planet_name in planets else 'is not'} in the list of planets."  # noqa: E501
 
     def get_moon_count(self, planet_name):
         planet_name = planet_name.lower()
@@ -93,8 +94,8 @@ class PlanetQuery():
         if self.planet_name in planets:
             return (f"Name: {planets[planet_name].name}\n"
                     f"Mass: {planets[planet_name].mass} Earth masses\n"
-                    f"Distance from Sun: {planets[planet_name].distance_from_sun} million km\n"
-                    f"Moons: {', '.join(planets[planet_name].moons) if planets[planet_name].moons else 'None'}")
+                    f"Distance from Sun: {planets[planet_name].distance_from_sun} million km\n"  # noqa: E501
+                    f"Moons: {', '.join(planets[planet_name].moons) if planets[planet_name].moons else 'None'}")  # noqa: E501
         else:
             return f"Planet '{planet_name}' not found!"
 

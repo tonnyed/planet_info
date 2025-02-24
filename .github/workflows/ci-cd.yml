@@ -1,4 +1,4 @@
-name: plannet-app CI/CD Pipeline
+name: Planet Info CI/CD Pipeline
 
 on:
   push:
