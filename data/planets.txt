@@ -1,0 +1,9 @@
+Mercury,3.3011e23,57.9,0
+Venus,4.8675e24,108.2,0
+Earth,5.97237e24,149.6,1,Moon
+Mars,6.4171e23,227.9,2,Phobos,Deimos
+Jupiter,1.8982e27,778.5,79,Europa,Ganymede,Callisto,Io
+Saturn,5.6834e26,1434,83,Titan,Rhea,Iapetus,Dione
+Uranus,8.6810e25,2871,27,Titania,Oberon,Umbriel,Ariel,Miranda
+Neptune,1.02413e26,4495,14,Triton,Nereid
+Pluto,1.303e22,5906.4,5,Charon,Styx,Nix,Kerberos,Hydra
