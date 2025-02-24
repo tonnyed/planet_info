@@ -1,6 +1,5 @@
-from planets import Planet, PlanetQuery
 import unittest
-
+from planets import PlanetQuery
 
 class TestPlanetInfo(unittest.TestCase):
     def setUp(self):

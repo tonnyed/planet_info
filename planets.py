@@ -36,10 +36,8 @@ class PlanetQuery():
                     moons = data[4:] if int(data[3]) > 0 else []
                     planets[name.lower()] = Planet(name, mass, distance, moons)
             return planets
-        except:
+        except (FileNotFoundError, IOError):
             print(f"Error: The file {self.load_data} was not found.")
-            return None
-
 
     def load_planets_hardcode(self):
         planets = {}
@@ -87,7 +85,6 @@ class PlanetQuery():
             return f"{planets[planet_name].name} has {moon_count} moon(s)."
         else:
             return f"Planet '{planet_name}' not found!"
-
 
     def get_info(self, planet_name):
         planet_name = planet_name.lower()

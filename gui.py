@@ -1,5 +1,7 @@
 import tkinter as tk
-from planets import Planet, PlanetQuery
+from planets import PlanetQuery
+
+
 class PlanetApp:
     def __init__(self, root):
         self.root = root
@@ -12,7 +14,8 @@ class PlanetApp:
 
         self.planet_menu = tk.Menu(self.menu, tearoff=0)
         self.menu.add_cascade(label="Planets", menu=self.planet_menu)
-        self.planet_menu.add_command(label="Query Planet", command=self.query_planet)
+        self.planet_menu.add_command(label="Query Planet",
+        command=self.query_planet)
         self.planet_menu.add_command(label="Exit", command=root.quit)
 
         # Main Frame
@@ -25,7 +28,8 @@ class PlanetApp:
         self.entry = tk.Entry(self.frame, width=60)
         self.entry.grid(row=0, column=1, padx=10)
 
-        self.search_button = tk.Button(self.frame, text="Search", command=self.display_planet_info)
+        self.search_button = tk.Button(self.frame, text="Search",
+        command=self.display_planet_info)
         self.search_button.grid(row=0, column=2, padx=10)
 
         self.result = tk.Label(self.frame, text="", justify=tk.LEFT)
