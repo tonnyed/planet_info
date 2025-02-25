@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module gui</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">gui</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/tonyedogiawerie/Documents/dev/msc/week-1/planet_info/gui.py">/Users/tonyedogiawerie/Documents/dev/msc/week-1/planet_info/gui.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="tkinter.html">tkinter</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="gui.html#PlanetApp">PlanetApp</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlanetApp">class <strong>PlanetApp</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#PlanetApp">PlanetApp</a>(root)<br>
+&nbsp;<br>
+A&nbsp;Tkinter-based&nbsp;GUI&nbsp;application&nbsp;for&nbsp;querying&nbsp;and&nbsp;displaying&nbsp;information&nbsp;about&nbsp;planets&nbsp;in&nbsp;the&nbsp;solar&nbsp;system.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;root&nbsp;(tk.Tk):&nbsp;The&nbsp;main&nbsp;window&nbsp;of&nbsp;the&nbsp;application.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;planets&nbsp;(PlanetQuery):&nbsp;An&nbsp;instance&nbsp;of&nbsp;the&nbsp;PlanetQuery&nbsp;class&nbsp;to&nbsp;interact&nbsp;with&nbsp;planet&nbsp;data.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;menu&nbsp;(tk.Menu):&nbsp;The&nbsp;menu&nbsp;bar&nbsp;for&nbsp;the&nbsp;application.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;frame&nbsp;(tk.Frame):&nbsp;The&nbsp;main&nbsp;frame&nbsp;containing&nbsp;input&nbsp;and&nbsp;result&nbsp;widgets.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;button_frame&nbsp;(tk.Frame):&nbsp;A&nbsp;frame&nbsp;containing&nbsp;buttons&nbsp;for&nbsp;specific&nbsp;queries.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="PlanetApp-__init__"><strong>__init__</strong></a>(self, root)</dt><dd><span class="code">Initializes&nbsp;the&nbsp;<a href="#PlanetApp">PlanetApp</a>&nbsp;GUI.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;root&nbsp;(tk.Tk):&nbsp;The&nbsp;root&nbsp;window&nbsp;for&nbsp;the&nbsp;Tkinter&nbsp;application.</span></dd></dl>
+
+<dl><dt><a name="PlanetApp-check_planet_in_list"><strong>check_planet_in_list</strong></a>(self)</dt><dd><span class="code">Checks&nbsp;if&nbsp;the&nbsp;entered&nbsp;planet&nbsp;name&nbsp;exists&nbsp;in&nbsp;the&nbsp;list&nbsp;of&nbsp;planets.<br>
+Updates&nbsp;the&nbsp;result&nbsp;label&nbsp;with&nbsp;a&nbsp;confirmation&nbsp;message.</span></dd></dl>
+
+<dl><dt><a name="PlanetApp-display_planet_info"><strong>display_planet_info</strong></a>(self)</dt><dd><span class="code">Displays&nbsp;the&nbsp;planet&nbsp;information&nbsp;by&nbsp;calling&nbsp;the&nbsp;`query_planet`&nbsp;method.</span></dd></dl>
+
+<dl><dt><a name="PlanetApp-query_planet"><strong>query_planet</strong></a>(self)</dt><dd><span class="code">Queries&nbsp;the&nbsp;planet&nbsp;information&nbsp;based&nbsp;on&nbsp;the&nbsp;name&nbsp;entered&nbsp;in&nbsp;the&nbsp;input&nbsp;field.<br>
+Updates&nbsp;the&nbsp;result&nbsp;label&nbsp;with&nbsp;the&nbsp;retrieved&nbsp;information.</span></dd></dl>
+
+<dl><dt><a name="PlanetApp-show_moon_count"><strong>show_moon_count</strong></a>(self)</dt><dd><span class="code">Displays&nbsp;the&nbsp;number&nbsp;of&nbsp;moons&nbsp;for&nbsp;the&nbsp;planet&nbsp;entered&nbsp;in&nbsp;the&nbsp;input&nbsp;field.</span></dd></dl>
+
+<dl><dt><a name="PlanetApp-show_planet_info"><strong>show_planet_info</strong></a>(self)</dt><dd><span class="code">Displays&nbsp;detailed&nbsp;information&nbsp;about&nbsp;the&nbsp;planet&nbsp;entered&nbsp;in&nbsp;the&nbsp;input&nbsp;field.</span></dd></dl>
+
+<dl><dt><a name="PlanetApp-show_planet_mass"><strong>show_planet_mass</strong></a>(self)</dt><dd><span class="code">Displays&nbsp;the&nbsp;mass&nbsp;of&nbsp;the&nbsp;planet&nbsp;entered&nbsp;in&nbsp;the&nbsp;input&nbsp;field.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
