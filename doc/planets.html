@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module planets</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">planets</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/tonyedogiawerie/Documents/dev/msc/week-1/planet_info/planets.py">/Users/tonyedogiawerie/Documents/dev/msc/week-1/planet_info/planets.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="planets.html#Planet">Planet</a>
+</dt><dt class="heading-text"><a href="planets.html#PlanetQuery">PlanetQuery</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Planet">class <strong>Planet</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Planet">Planet</a>(name,&nbsp;mass,&nbsp;distance_from_sun,&nbsp;moons)<br>
+&nbsp;<br>
+Represents&nbsp;a&nbsp;planet&nbsp;in&nbsp;the&nbsp;solar&nbsp;system.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;planet.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mass&nbsp;(float):&nbsp;The&nbsp;mass&nbsp;of&nbsp;the&nbsp;planet&nbsp;in&nbsp;Earth&nbsp;masses.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;distance_from_sun&nbsp;(float):&nbsp;The&nbsp;distance&nbsp;of&nbsp;the&nbsp;planet&nbsp;from&nbsp;the&nbsp;Sun&nbsp;in&nbsp;million&nbsp;kilometers.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;moons&nbsp;(list):&nbsp;A&nbsp;list&nbsp;of&nbsp;the&nbsp;planet's&nbsp;moons.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Planet-__init__"><strong>__init__</strong></a>(self, name, mass, distance_from_sun, moons)</dt><dd><span class="code">Initializes&nbsp;a&nbsp;<a href="#Planet">Planet</a>&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;planet.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mass&nbsp;(float):&nbsp;The&nbsp;mass&nbsp;of&nbsp;the&nbsp;planet&nbsp;in&nbsp;Earth&nbsp;masses.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;distance_from_sun&nbsp;(float):&nbsp;The&nbsp;distance&nbsp;of&nbsp;the&nbsp;planet&nbsp;from&nbsp;the&nbsp;Sun&nbsp;in&nbsp;million&nbsp;kilometers.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;moons&nbsp;(list):&nbsp;A&nbsp;list&nbsp;of&nbsp;the&nbsp;planet's&nbsp;moons.</span></dd></dl>
+
+<dl><dt><a name="Planet-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Returns&nbsp;a&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;planet.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;A&nbsp;formatted&nbsp;string&nbsp;containing&nbsp;the&nbsp;planet's&nbsp;name,&nbsp;mass,&nbsp;distance&nbsp;from&nbsp;the&nbsp;Sun,&nbsp;and&nbsp;moons.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlanetQuery">class <strong>PlanetQuery</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#PlanetQuery">PlanetQuery</a>(load_data=False)<br>
+&nbsp;<br>
+A&nbsp;class&nbsp;to&nbsp;query&nbsp;and&nbsp;retrieve&nbsp;information&nbsp;about&nbsp;planets&nbsp;in&nbsp;the&nbsp;solar&nbsp;system.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;load_data&nbsp;(str&nbsp;or&nbsp;bool):&nbsp;Path&nbsp;to&nbsp;a&nbsp;file&nbsp;containing&nbsp;planet&nbsp;data&nbsp;or&nbsp;False&nbsp;to&nbsp;use&nbsp;hardcoded&nbsp;data.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;planets&nbsp;(dict):&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;<a href="#Planet">Planet</a>&nbsp;objects,&nbsp;keyed&nbsp;by&nbsp;planet&nbsp;name.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="PlanetQuery-__init__"><strong>__init__</strong></a>(self, load_data=False)</dt><dd><span class="code">Initializes&nbsp;the&nbsp;<a href="#PlanetQuery">PlanetQuery</a>&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;load_data&nbsp;(str&nbsp;or&nbsp;bool):&nbsp;Path&nbsp;to&nbsp;a&nbsp;file&nbsp;containing&nbsp;planet&nbsp;data&nbsp;or&nbsp;False&nbsp;to&nbsp;use&nbsp;hardcoded&nbsp;data.</span></dd></dl>
+
+<dl><dt><a name="PlanetQuery-get_info"><strong>get_info</strong></a>(self, planet_name)</dt><dd><span class="code">Retrieves&nbsp;detailed&nbsp;information&nbsp;about&nbsp;a&nbsp;planet.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;planet_name&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;planet.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;A&nbsp;formatted&nbsp;string&nbsp;containing&nbsp;the&nbsp;planet's&nbsp;name,&nbsp;mass,&nbsp;distance&nbsp;from&nbsp;the&nbsp;Sun,&nbsp;and&nbsp;moons,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;an&nbsp;error&nbsp;message&nbsp;if&nbsp;the&nbsp;planet&nbsp;is&nbsp;not&nbsp;found.</span></dd></dl>
+
+<dl><dt><a name="PlanetQuery-get_moon_count"><strong>get_moon_count</strong></a>(self, planet_name)</dt><dd><span class="code">Retrieves&nbsp;the&nbsp;number&nbsp;of&nbsp;moons&nbsp;for&nbsp;a&nbsp;planet.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;planet_name&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;planet.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;A&nbsp;string&nbsp;containing&nbsp;the&nbsp;number&nbsp;of&nbsp;moons&nbsp;or&nbsp;an&nbsp;error&nbsp;message&nbsp;if&nbsp;the&nbsp;planet&nbsp;is&nbsp;not&nbsp;found.</span></dd></dl>
+
+<dl><dt><a name="PlanetQuery-get_planet_mass"><strong>get_planet_mass</strong></a>(self, planet_name)</dt><dd><span class="code">Retrieves&nbsp;the&nbsp;mass&nbsp;of&nbsp;a&nbsp;planet.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;planet_name&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;planet.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;A&nbsp;string&nbsp;containing&nbsp;the&nbsp;planet's&nbsp;mass&nbsp;or&nbsp;an&nbsp;error&nbsp;message&nbsp;if&nbsp;the&nbsp;planet&nbsp;is&nbsp;not&nbsp;found.</span></dd></dl>
+
+<dl><dt><a name="PlanetQuery-is_planet_in_list"><strong>is_planet_in_list</strong></a>(self, planet_name)</dt><dd><span class="code">Checks&nbsp;if&nbsp;a&nbsp;planet&nbsp;is&nbsp;in&nbsp;the&nbsp;list&nbsp;of&nbsp;planets.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;planet_name&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;planet.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;A&nbsp;string&nbsp;indicating&nbsp;whether&nbsp;the&nbsp;planet&nbsp;is&nbsp;in&nbsp;the&nbsp;list.</span></dd></dl>
+
+<dl><dt><a name="PlanetQuery-load_file"><strong>load_file</strong></a>(self)</dt><dd><span class="code">Reads&nbsp;planet&nbsp;data&nbsp;from&nbsp;a&nbsp;file&nbsp;and&nbsp;returns&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;<a href="#Planet">Planet</a>&nbsp;objects.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;<a href="#Planet">Planet</a>&nbsp;objects,&nbsp;keyed&nbsp;by&nbsp;planet&nbsp;name.</span></dd></dl>
+
+<dl><dt><a name="PlanetQuery-load_planets_hardcode"><strong>load_planets_hardcode</strong></a>(self)</dt><dd><span class="code">Loads&nbsp;hardcoded&nbsp;planet&nbsp;data&nbsp;and&nbsp;returns&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;<a href="#Planet">Planet</a>&nbsp;objects.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;<a href="#Planet">Planet</a>&nbsp;objects,&nbsp;keyed&nbsp;by&nbsp;planet&nbsp;name.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

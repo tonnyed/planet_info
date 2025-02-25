@@ -2,6 +2,8 @@
 
 This is a Python program that provides information about planets in our solar system. It includes a Tkinter GUI, unit tests, and input validation.
 
+![screenshot](planet-info.png)
+
 ## Features
 - Display planet details (name, mass, distance from the Sun, and moons).
 - Query planets by name.
@@ -12,6 +14,9 @@ This is a Python program that provides information about planets in our solar sy
 2. Navigate to the project folder:
    ```bash
    cd planet_info
+   
+   python main.py or python2 main.py
+   
 3. Build the Docker Image.
    Once you have your Dockerfile, you can build the image with the following command:
    ```bash

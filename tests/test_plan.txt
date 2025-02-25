@@ -7,10 +7,5 @@ Test Plan for Solar System Program
 2. Test PlanetQuery Class:
    - Verify that the Planet class correctly stores and displays planet data.
 
-3. Test GUI:
-   - Verify that the GUI displays correct information for valid planet queries.
-   - Verify that the GUI handles invalid planet names gracefully.
 
-4. Test Edge Cases:
-   - Verify that planets with no moons are handled correctly.
-   - Verify that planets with multiple moons are handled correctly.
+
