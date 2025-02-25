@@ -15,7 +15,7 @@ This is a Python program that provides information about planets in our solar sy
    ```bash
    cd planet_info
    
-   python main.py or python2 main.py
+   python main.py or python3 main.py
    
 3. Build the Docker Image.
    Once you have your Dockerfile, you can build the image with the following command:
